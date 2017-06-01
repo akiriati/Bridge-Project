@@ -74,6 +74,7 @@ def parse_params(argv):
         opts, args = getopt.getopt(argv[1:],"hf:l:a:z:t:")
     except getopt.GetoptError:
         print_help_string()
+        return
     for opt, arg in opts:
         if opt == '-h':
             print_help_string()
